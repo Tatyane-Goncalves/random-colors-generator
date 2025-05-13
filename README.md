@@ -11,7 +11,6 @@ Welcome to **ColorBoom**, a simple and functional web app that generates random 
 - 📋 Lets you **copy** the HEX code with one click
 - 🔁 Generate new colors with a **button click or spacebar**
 - 📱 Fully **responsive** layout
-- 🌗 Supports **dark mode**
 
 ---
 
@@ -68,16 +67,11 @@ cd random-colors-generator
 5 - CClick on a HEX code to copy it, or click the lock icon to lock a color in place.
 
 
-
-
-
-
-
-
 ---
 ## ✨ Extra Features (future ideas)
 
 - 💾 Save favorite palettes in LocalStorage
+- 🌗 Supports **dark mode**
 
 ---
 

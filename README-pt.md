@@ -12,7 +12,6 @@ Bem-vindo ao **ColorBoom**, um app web simples e funcional que gera paletas de c
 - 📋 Permite **copiar** o código HEX com um clique
 - 🔁 Geração de cores com **botão ou tecla de espaço**
 - 📱 Layout 100% **responsivo**
-- 🌗 Suporte a modo escuro
 
 ---
 
@@ -70,6 +69,7 @@ cd random-colors-generator
 
 ## ✨ Funcionalidades Extras (futuras ideias)
 - 💾 Salva paletas favoritas no LocalStorage
+- 🌗 Suporte a modo escuro
 
 ---
 
