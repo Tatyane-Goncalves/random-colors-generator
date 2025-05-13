@@ -7,3 +7,170 @@
   --text-dark: #333;
   --text-light: #FFF;
 }
+
+/* ------------------------------
+Reset & Fonte
+------------------------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4F4F4;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* ------------------------------
+Conteúdo principal
+------------------------------ */
+.content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* ------------------------------
+🔝 Cabeçalho
+------------------------------ */
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8E44AD;
+  margin-bottom: 1.5rem;
+}
+
+/* ------------------------------
+Botão Gerar
+------------------------------ */
+button {
+  background-color: #8E44AD;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+button:hover {
+  background-color: #732D91;
+}
+
+button:active {
+  background-color: #5E2C7A;
+}
+
+/* ------------------------------
+Área dos Cards de Cor
+------------------------------ */
+.colorsCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+/* Card individual */
+.color-card {
+  position: relative;
+  height: 150px;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-card:hover {
+  transform: scale(1.03);
+}
+
+/* Código HEX */
+.color-code {
+  font-weight: 500;
+  font-size: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Cadeado */
+.lock-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: transform 0.2s;
+}
+
+.lock-icon:hover {
+  transform: scale(1.2);
+}
+
+/* ------------------------------
+Mensagem de status
+------------------------------ */
+.messageStatus {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  max-width: 300px;
+  margin-inline: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Classe para exibir mensagem */
+.messageStatus.active {
+  opacity: 1;
+}
+
+/* ------------------------------
+Responsivo
+------------------------------ */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .color-card {
+    height: 120px;
+  }
+
+  .color-code {
+    font-size: 0.9rem;
+  }
+}
+
+/* ------------------------------
+Rodapé
+------------------------------ */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: #777;
+}

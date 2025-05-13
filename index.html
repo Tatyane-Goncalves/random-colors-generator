@@ -12,10 +12,31 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
     <title>ColorBoom</title>
   </head>
   <body>
+
+
+    <div class="content">
+      <header class="app-header">
+        <h1>ColorBoom</h1>
+      </header>
+
+      <main>
+        <button class="generate-btn" aria-label="Gerar nova paleta de Cores">Gerar Cores</button>
+
+        <section id="colorsCard" class="colorsCard"></section>
+
+        <p class="messageStatus" id="messageStatus" aria-live="polite"></p>
+      </main>
+
+      <footer>
+        <p> Feito com café, código e muitos cliques. &copy; 2025 | Tatyane Gonçalves</p>
+      </footer>
+    </div>
+
+
+
     <script src="./src/scripts/main.js" defer></script>
   </body>
 </html>
